@@ -32,7 +32,7 @@ Start in directory for current git mcladt
 ```
 
 # Preparation
-Install Java JDK and [Apache Ant](http://ant.apache.org/).
+Install Java JDK.
 Set `ANDROID_HOME` and apend `%ANDROID_HOME%\ndk-bundle`, Java to the `PATH` as the followings (path for prebuilt depends on platform, example is for macOS):
 ```
 set ANDROID_HOME=<android>
