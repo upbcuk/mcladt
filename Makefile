@@ -11,5 +11,4 @@ bin/MainActivity.apk: key.keystore bin/MainActivity-unsigned.apk
 	jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore key.keystore bin/MainActivity-release-unsigned.apk djnadt -signedjar bin/MainActivity.apk -storepass $(PASS)
 
 install: bin/MainActivity.apk
-	adb uninstall com.example.djnadt
 	adb install bin/MainActivity.apk

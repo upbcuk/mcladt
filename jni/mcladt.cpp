@@ -2,6 +2,7 @@
 #include <string>
 #include <sstream>
 #include <mcl/bn256.hpp>
+#include <mcl/bn.hpp>
 
 std::string bn256_sample()
 {
@@ -10,9 +11,12 @@ std::string bn256_sample()
 	const char *ba = "13891744915211034074451795021214165905772212241412891944830863846330766296736";
 	const char *bb = "7937318970632701341203597196594272556916396164729705624521405069090520231616";
 
+
+	#define MCLBN_DEFINE_STRUCT
+	#define MCLBN_FP_UNIT_SIZE 4
 	using namespace mcl::bn256;
 
-	bn256init();
+	initPairing();
 	G2 Q(Fp2(aa, ab), Fp2(ba, bb));
 	G1 P(-1, 1);
 

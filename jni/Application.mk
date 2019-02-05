@@ -1,3 +1,3 @@
-APP_ABI := armeabi
-APP_PLATFORM := android-19
-APP_STL := gnustl_shared
+APP_ABI := arm64-v8a
+APP_PLATFORM := android-24
+APP_STL := c++_shared
