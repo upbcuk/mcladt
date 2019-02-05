@@ -3,34 +3,32 @@
 
 This repository is a sample of [mcl](https://github.com/herumi/mcl) for Android.
 
+It includes for arm64-v8a and armeabi-v7a:
+
+* prebuilt gmp-android
+* prebuilt openssl-android
+
 # Test environment
 
 * Pixel 1
 * Android Studio
 
 # Download
-
+Start in dicrectory for current git mcladt
 ```
- mkdir work
- cd work
+ cd ..
  git clone git://github.com/herumi/mcl
  git clone git://github.com/herumi/cybozulib
- md adt
- cd adt
- git clone git://github.com/herumi/gmp-android
- git clone git://github.com/herumi/openssl-android
- git clone git://github.com/upbcuk/mcladt.git
+ cd mcladt
 ```
 
 ```
-work/
-  /mcl
-  /cybozulib
-  /adt/
-      /gmp-android
-      /openssl-android
-      /mcladt
-
+/mcl
+/cybozulib
+/mcladt/
+    /gmp-android
+    /openssl-android
+    /mcladt
 ```
 
 # preparation
